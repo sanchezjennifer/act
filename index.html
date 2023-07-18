@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="img/images.jpg">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" 
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+         crossorigin="anonymous">
+</head>
+<body >
+   
+    <h1 class="text-center"> REGISTRO</h1>
+    <hr>
+    <div class="container-md text-center">
+       <div class="row">
+
+            <div class="col-6 mb-2">
+             <label class="text-center">Nombre:</label> 
+             <input class="form-control"  type="text" id="item" name="item" placeholder="ingrese el nombre">
+            </div>
+            
+            <div class="col-6 mb-2">
+            <label class="text-center">Apellido:</label>
+            <input class="form-control"  type="text" id="apellido" name="apellido" placeholder="ingrese el Apellido">
+            </div>
+               
+               <div class="col-6 mb-2">
+                 <label class="text-center">Telefono:</label>
+                 <input class="form-control"  type="text" id="number" name="number" placeholder="ingrese el numero">
+               </div>
+              
+               <div class="col-6 mb-2">
+                <label class="text-center">servicio:</label>
+                <input class="form-control"  type="text" id="servi" name="servi" placeholder="ingrese el nombre del servicio">
+               </div>
+               
+            <div class="col-12 mb-2">
+                <button type="button" class="btn btn-primary" onclick="addItem()">Agregar</button>
+             </div>
+
+       </div>
+
+       <div class="text-center col-12 mb-2">
+        <h2 class="text-center text-warning" >Lista De Clientes </h2>
+        <hr>
+        <div class="row" id="ingresos">vacia</div>
+
+
+       </div>
+    
+    </div>
+    
+    <script src="./js/objeto.js"> </script>
+</body>
+</html>
